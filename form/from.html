@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Survey</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">First Name</label>
+            <input type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter First Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Last Name</label>
+            <input type="text"
+                    id="Lastname"
+                    name="Lastname"
+                    placeholder="Enter Lastname"/>
+          </div>
+          <div class="user-input-box">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+        </div>
+        <div class="user-input-box">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="usa">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+        <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+          <div class="user-input-box">
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" name="profession" placeholder="Enter Your Profession"/>
+        </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="MoblieNumber">Mobile Number</label>
+            <input type="text"
+                    id="MoblieNumber"
+                    name="MoblieNumber"
+                    placeholder="Enter Moblie Number"/>
+          </div>
+        
+        <div class="form-submit-btn">
+            <button id="submitBtn">Submit</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div id="summaryPopup" class="popup-container">
+        <div class="popup-content">
+          <span id="closePopup" class="close-popup">&times;</span>
+          <h2>Summary</h2>
+          <div id="summary"></div>
+        </div>
+      </div>
+  
+      <script src="from.js"></script>
+  </body>
+</html>
